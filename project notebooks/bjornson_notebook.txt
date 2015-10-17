@@ -9,4 +9,6 @@ October 12 - 18
 Contributions:
 	- Created proposal outline for group editing of proposal .15h
 	- created Gantt Chart to keep track of schedule and required progress. 2h
+	- Edit project proposal - 1h
+	- Put proposal into latex and export as pdf - 2h
 	
