@@ -1,0 +1,292 @@
+\documentclass{sigchi}
+
+% Use this command to override the default ACM copyright statement
+% (e.g. for preprints).  Consult the conference website for the
+% camera-ready copyright statement.
+
+
+%% EXAMPLE BEGIN -- HOW TO OVERRIDE THE DEFAULT COPYRIGHT STRIP -- (July 22, 2013 - Paul Baumann)
+\toappear{Permission to make digital or hard copies of all or part of this work for personal or classroom use is      granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee.}
+% {\emph{CHI'14}}, April 26--May 1, 2014, Toronto, Canada. \\
+% Copyright \copyright~2014 ACM ISBN/14/04...\$15.00. \\
+% DOI string from ACM form confirmation}
+%% EXAMPLE END -- HOW TO OVERRIDE THE DEFAULT COPYRIGHT STRIP -- (July 22, 2013 - Paul Baumann)
+
+
+% Arabic page numbers for submission.  Remove this line to eliminate
+% page numbers for the camera ready copy 
+
+%\pagenumbering{arabic}
+
+% Load basic packages
+\usepackage{balance}  % to better equalize the last page
+\usepackage{graphics} % for EPS, load graphicx instead 
+%\usepackage[T1]{fontenc}
+\usepackage{txfonts}
+\usepackage{times}    % comment if you want LaTeX's default font
+\usepackage[pdftex]{hyperref}
+% \usepackage{url}      % llt: nicely formatted URLs
+\usepackage{color}
+\usepackage{textcomp}
+\usepackage{booktabs}
+\usepackage{ccicons}
+\usepackage{todonotes}
+\usepackage{csquotes}
+
+% llt: Define a global style for URLs, rather that the default one
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\bf\ttfamily}}}
+\makeatother
+\urlstyle{leo}
+
+% To make various LaTeX processors do the right thing with page size.
+\def\pprw{8.5in}
+\def\pprh{11in}
+\special{papersize=\pprw,\pprh}
+\setlength{\paperwidth}{\pprw}
+\setlength{\paperheight}{\pprh}
+\setlength{\pdfpagewidth}{\pprw}
+\setlength{\pdfpageheight}{\pprh}
+
+% Make sure hyperref comes last of your loaded packages, to give it a
+% fighting chance of not being over-written, since its job is to
+% redefine many LaTeX commands.
+\definecolor{linkColor}{RGB}{6,125,233}
+\hypersetup{%
+  pdftitle={Research Proposal: Extending ARIS for Greater Collaborative Potential},
+  pdfauthor={LaTeX},
+  pdfkeywords={},
+  bookmarksnumbered,
+  pdfstartview={FitH},
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=linkColor,
+  breaklinks=true,
+}
+
+% create a shortcut to typeset table headings
+% \newcommand\tabhead[1]{\small\textbf{#1}}
+
+% End of preamble. Here it comes the document.
+\begin{document}
+
+\title{Research Proposal: \\Extending ARIS for Greater Collaborative Potential}
+
+\numberofauthors{3}
+\author{%
+  \alignauthor{Bjornson, Steven A.\\
+    \affaddr{University of Victoria}\\
+    \affaddr{Victoria, BC, Canada}\\
+    }
+  \alignauthor{Ca, Khoipham\\
+    \affaddr{University of Victoria}\\
+    \affaddr{Victoria, BC, Canada}\\
+    }
+  \alignauthor{Lebo, Peter\\
+    \affaddr{University of Victoria}\\
+    \affaddr{Victoria, BC, Canada}\\
+    }
+  \alignauthor{Mcculloch, Kaileen\\
+    \affaddr{University of Victoria}\\
+    \affaddr{Victoria, BC, Canada}
+    }
+  \alignauthor{Perry, Bernadette\\
+    \affaddr{University of Victoria}\\
+    \affaddr{Victoria, BC, Canada}\\
+    }
+}
+
+\maketitle
+
+% \begin{abstract}
+
+% \end{abstract}
+
+% \keywords{Authors' choice; of terms; separated; by semi\-colons;
+%   commas, within terms only; this section is required.}
+
+\section{Introduction}
+
+Project ARIS is an open-source augmented reality engine. Applications developed in ARIS are played in the ‘real-world’ with devices running iOS (iPhone/iPad) through the use of GPS functionality of the device and QR codes to trigger events based on the location of players. The engine can be used to make games, tours, and interactive stories. 
+
+ARIS has three three layers of participation: Developers create applications. Facilitators bring together people to participate in the application. Users are the participants in the application. The relationship between these actors is loose---Developers and Facilitators can be the same people---but importantly users have limited ability to ‘contribute’ to the world; Aside from interacting the application story, Users can only add to the world through dropping items on the ground.
+
+ARIS gives a wide breadth of design options for creating complex applications. One constraint in the game is that the content, once created, is static. For example, if a designer places a Plaque (a permanent item in the game containing media for players to view), the information contained in the item is set until the designer changes it at a later time. Another constraint is the lack of in-game communication options. While players in the same physical space are able to communicate face-to-face, no mechanism exists for users to communicate directly in the game. This is a component which would have value for users separated by a large distance. Furthermore, facilitator-to-user communication is not possible. Both these issues speak to the fundamental static nature of ARIS applications: static content  which does not allow for dynamic communication.
+
+\subsection{Research Question}
+Our research question is twofold: First, what mechanism could be implemented in order to add dynamic communication and content to ARIS applications to increase the capability of Users, Facilitators, and Developers? And second, in what ways will participants utilize this mechanism beyond the original design intention? i.e. what actions will emerge from this mechanism?
+
+\section{Technical Components}
+\subsection{Development}
+Our group intends to develop more collaborative component(s) into the existing ARIS platform to facilitate greater collaboration and teamwork amongst participants during ARIS game sessions. During individual game sessions, you may see the participants collected together into teams around one device with the game running. This gives the people in the immediate vicinity the ability to collaborate and exchange ideas in their own group, but not with the several other teams that are also playing the game and are a distance away. ARIS currently lacks any sort of collaborative elements and our team’s hope is to add them, thereby increasing ease of use of the game, making it more enjoyable, and benefiting the total learning experience (given that the app itself is often used as a teaching tool).
+
+While we are only in the initial phases of the project, we have isolated two major options to adding as a collaborative component to the game: Twitter integration and web-based chat. Which one is chosen will depend on the design feasibility. In the case of this project, the optimal choice will be one which can be completed in the time frame (as opposed to ‘the best’ addition).
+
+\subsection{Choose Existing Services}
+The ARIS app itself exists as a type of ‘gamemaker’ type tool, facilitating creation of games around topics chosen by developers. A developer can use a web based GUI to plan aspects of the application ranging from characters, items, or plaques (upon which useful information is kept). This system allows those without the iOS development background to easily create complex applications. Furthermore, JavaScript can be embed several facets of the game which we should be able to use to implement a collaborative component. 
+
+The benefit of a chat room is it would allow free flow of discussion amongst teams regarding strategies and gameplay elements. Twitter integration would allow Players, Facilitators, and Developers to update content in game which would normally be static. This could allow for person-to-person and broadcast communication. 
+
+Twitter has an advantage since it is a stable microblogging service and would perfectly suit the needs of providing short, quick updates that are critical to an application’s success. Additionally, Twitter provides their own API for interaction and due to large community support and popularity of the microblogging platform, we hope implementation will be straightforward. However, Twitter requires an authentication procedure which may be beyond the capabilities of the ARIS platform. We will be investigating the complexity of this option early in our research.
+
+Twitter may seem like a strange choice for adding a collaborative element but an argument can be made that the the service’s constraints--only allowing users to post 140 characters-- do not restrict any specific use on the user. As a result, Twitter has been used in many interesting ways.\footnote{http://www.wired.com/2015/10/lori-hepner-twitter-portraits/?mbid\=social\_twitter} With this in mind, Lee and Paine stated that  ``[c]oordinated action can still be conceived of as people working together toward a shared goal. But shared goals can be very diffuse and ill-defined and we also see that “working together” may sometimes feel more like a series of fleeting microblog exchanges or people working rather separately on different systems that still need to interoperate with a larger, sprawling infrastructure.''\cite{lee2015matrix} This points to the use of Twitter as a mechanism for enabling collaborative.
+
+For the chat room option, we would create a simple webpage with HTML/CSS, JavaScript, and Node.Js to create a webpage where Users could login during a session. Then JavaScript running on the ARIS client can communicate with the chat page appropriately to send and receive messages. The issues inherent to chatroom design are numerous. Without an authentication system the chatroom could be compromised (spam or even malicious attacks). Furthermore, developing a server based application is a large task and may be beyond the feasibility of this research project.
+
+\subsection{Development}
+The ARIS platform has the ability to run JavaScript throughout many components of the game. Individual items, permanent game components (plaques) dropped by Developers, and Player menus can all run JavaScript and this code can interface with the system through the system API. For example, JavaScript can be used to increment/decrement items owned by a Player. The full scope of the ARIS API must still be researched but we are confident we can leverage this feature to implement our addition to the system.
+
+\subsection{Challenges}
+Some of the technical challenges we foresee with this project is our inexperience with iOS development, learning the ARIS platform, developing for an iOS specific app with limited iOS device access, and appropriate security measures to ensure external misuse doesn't happen through Twitter or our chat room service. On combating those risks, we expect to have to do limited development on the iOS platform for this project, so any required iOS development will be small. 
+
+Another hurdle is our development process is inexperience with the ARIS platform itself. In terms complexity the ARIS platform is medium to high--large code base but well documented API. Consequently, we will need to spend significant amounts of time researching the platform to gain greater intuition about what is actually possible to develop in the game.
+
+We have already started working with the ARIS platform and will be present at the ARIS Game Jam on the weekend of October 23rd to learn and gain familiarity with Developers and their usage of the platform.
+
+
+\section{Methodology}
+This research consists of the development and implementation of collaborative game elements for the ARIS platform. As design-based research, specifically Peffers et al.’s Design Science framework will be employed. This methodology consists of six activities to progress through the research process:
+
+\begin{itemize}
+  \item Problem identification and motivation. Define the specific research problem and justify the value of a solution.
+  \item Define the objectives for a solution. Infer the objectives of a solution from the problem definition and knowledge of what is possible and feasible.
+  \item Design and development. Create the artifact, and include knowledge of theory that can be brought to bear in a solution.
+  \item Demonstrate the use of the artifact to solve one or more instances of the problem.
+  \item Observe and measure how well the artifact supports a solution to the problem.
+  \item Diffuse the resulting knowledge. \cite{peffers2007design}
+\end{itemize}
+
+Although created for Information Systems, this methodology lends itself well to other research domains. The ARIS platform is primarily used within the context of creating pedagogical resources and games. Regarding educational research and the need to make improvements in this domain, Reeves proposes, ``that progress in improving teaching and learning through technology may be accomplished using design research as an alternative model for inquiry.''\cite{reeves2006design} Additionally, within the context of educational design research, Reeves, Herrington and Oliver parallel five of Peffers et al.’s activities when describing the benefits of Design Science:
+
+\blockquote{One of the primary advantages of design research is that it requires practitioners and researchers to collaborate in the identification of real teaching and learning problems, the creation of prototype solutions based on existing design principles, and the testing and refinement of both the prototype solutions and the design principles until satisfactory outcomes have been reached by all concerned.\cite{reeves2005design}}
+
+The problem our research will address is a lack of collaborative game elements within the ARIS platform.  Although what we propose may not appear to address a pedagogical issue, effective collaborative learning is central to pedagogy and therefore our aim is pertinent.\cite{inaba2004learners} Furthermore, the use of Augmented Realities draws on situated learning theory and will therefore be central in the design and development stage of our research. Dunleavy and Dede affirm that ``[s]ituated learning theory posits that all learning takes place within a specific context and the quality of the learning is a result of interactions among the people, places, objects, processes, and culture within and relative to that given context.''\cite{dunleavy2014augmented}
+
+The platform has been used to create systems for a variety of learning contexts; for example science, art, history, and language learning.\cite{gagnon2010aris, holden2012leveraging, roy2013examining, dunleavy2014augmented} The ARIS community includes a wide range of users, such as, ``artists, educators, game designers and story tellers,''\cite{aris2015} many of which are using it for educational purposes because it is user-friendly, and includes an online community to address questions and feedback.\cite{roy2013examining} The community itself is also collaborative; the platform is open source, and members connect through Google groups, Google hangouts, and Global Game Jams. However, the ARIS platform itself lacks collaborative game elements. Holden addresses this limitation of ARIS and explains the constraints of the system:
+
+\begin{itemize}
+  \item Locks, the logical glue in ARIS, largely respond to what an individual player has done or has in possession. The world is largely not shared between players.
+  \item Players cannot easily interact with each other in ARIS. We used to have a cool ``trade'' feature, but Google bought it and shut it down.\cite{algorar2015}
+\end{itemize}
+
+To address this, and fittingly our motivation for this research, we propose the implementation of real-time communication or the use of social media within the ARIS platform. Although the community has expressed interest in collaborative game elements, Rogers addresses that ``[g]etting a new idea adopted, even when it has obvious advantages, is difficult.''\cite{rogers2003diffusion} However, given that social media integration is by no means a new concept within a pedagogical context, this may help facilitate the process.
+
+Rogers defines the diffusion of new ideas by the following elements: ``(1) an innovation (2) that is communicated through certain channels (3) over time (4) among the members of a social system.''\cite{rogers2003diffusion} Once the technical components of our proposed collaborative elements are addressed and developed, we will distribute these to the members of the ARIS community via the available channels:  Google groups, Google hangouts and the Global Game Jam. We will also circulate a pre and post questionnaire seeking feedback regarding our proposed collaborative elements, with follow up interviews to shed further light on any potential implementation. ARIS users also share their games within the community and these could potentially be examined, and/or play-tested to see how the elements were incorporated. The limited time available for this research is likely the greatest risk.
+
+Therefore, if time constraints prove to be an issue, we then propose to create a game in ARIS and incorporate the new feature(s). This system will then be analyzed from the user/players point of view by means of a mixed-method approach: a case study analysis with data collected via pre and post questionnaires, a focus group, and field observation. A mixed-method approach allows for a more comprehensive study, as Easterbrook et al.’s state, ``[a] variety of methods can be applied to any research problem, and it is often necessary to use a combination of methods to fully understand the problem.''\cite{easterbrook2008selecting} McGrath reiterates this same notion: ``[i]f you use multiple methods, carefully picked to have different strengths and weaknesses, the methods can add strength to one another by offsetting each other’s weaknesses.''\cite{mcgrath1995methodology} This highlights the strength of triangulation, which will include using several research methods to validate our data by cross verification of multiple sources.
+
+\section{Milestones}
+\hfill \\
+% \begin{table}[]
+% \centering
+% \label{my-label}
+\begin{tabular}{l |l}
+\large{Deadline}  & \large{Deliverable (complete by date)} \\
+\hline \\
+Oct. 23/24 &                                                                        \\
+           & ARIS Game Jam (Survey)                                                 \\
+           & Code Feasibility Deadline  \\
+\hline \\
+Nov. 4     &\\
+            & Oral update on project progress (in class)                             \\
+\hline \\
+Nov. 13    &                                                                        \\
+           & Interim project reports                                                \\
+           & Distribute Completed Code to Community                                 \\
+           & Implement and Distribute Community Survey                              \\
+\hline \\
+Dec. 3     &                                                                        \\
+           & Analyze Survey Data                                                    \\
+           & In Class Presentation                                                  \\
+           & Project final reports                                                 
+\end{tabular}
+
+\section{Expected Results}
+Since JavaScript can be embedded within characters, items, and components called plaque (in game items which reside permanently in spaces), it is conceivable the communication service we implement could be used for:
+
+\begin{itemize}
+  \item A broadcast method for game facilitators to contact players in game. e.g. ‘everyone meet here at this time’.
+  \item Embedding dynamic information into the game. e.g. plaques can change state even after being placed. (Similar to the ancient Roman Acta Diurna\footnote{https://en.wikipedia.org/wiki/Acta\_Diurna}).
+  \item Item giveaways. e.g. player’s receive an item for retweeting for ARIS developers Twitter account.
+  \item Player discussion via a pseudo forum environment. e.g. commenting on a broadcast by game facilitators.
+\end{itemize}
+
+Furthermore, we expect the community to come up with novel uses for the tool we create beyond the original design parameters. The power of Twitter seems to come from the emergent behaviour which spawns from the simple capabilities of the service. In the same vein we expect community members to take our service, get creative and do interesting things.
+
+\section{Conclusion}
+
+Augmented Reality technology is on the rise as we advance in technology. Project ARIS is an open-source platform for developing iOS Augmented Reality games, with a primarily pedagogical focus. While ARIS has proven to be a great success, we feel like it can be improved. With the theme of our course CSCW (Computer Supported Collaborative Work), knowing all the benefits and necessities of collaboration, we will work on integrating a communication method into ARIS for players to participate in the games they play more actively.  
+
+Our planned implementation is either integration with Twitter or create a chat room function for the game. We firmly believe that by having these services, user experience of ARIS will improve. The idea behind Augmented Reality is the imitation of the real world, which inevitably include human-to-human interaction. However, the state of ARIS right now does not have a platform for  such interaction. By implementing the proposed solution(s), we aim to enhance user experience by allowing user-to-user communication directly in the application.
+
+% Balancing columns in a ref list is a bit of a pain because you
+% either use a hack like flushend or balance, or manually insert
+% a column break.  http://www.tex.ac.uk/cgi-bin/texfaq2html?label=balance
+% multicols doesn't work because we're already in two-column mode,
+% and flushend isn't awesome, so I choose balance.  See this
+% for more info: http://cs.brown.edu/system/software/latex/doc/balance.pdf
+%
+% Note that in a perfect world balance wants to be in the first
+% column of the last page.
+%
+% If balance doesn't work for you, you can remove that and
+% hard-code a column break into the bbl file right before you
+% submit:
+%
+% http://stackoverflow.com/questions/2149854/how-to-manually-equalize-columns-
+% in-an-ieee-paper-if-using-bibtex
+%
+% Or, just remove \balance and give up on balancing the last page.
+%
+%\balance{}
+
+% \section{References Format}
+% Your references should be published materials accessible to the
+% public. Internal technical reports may be cited only if they are
+% easily accessible (i.e., you provide the address for obtaining the
+% report within your citation) and may be obtained by any reader for a
+% nominal fee. Proprietary information may not be cited. Private
+% communications should be acknowledged in the main text, not referenced
+% (e.g., ``[Golovchinsky, personal communication]'').
+
+% Use a numbered list of references at the end of the article, ordered
+% alphabetically by first author, and referenced by numbers in
+% brackets~\cite{ethics,Klemmer:2002:WSC:503376.503378}. For papers from
+% conference proceedings, include the title of the paper and an
+% abbreviated name of the conference (e.g., for Interact 2003
+% proceedings, use Proc.\ Interact 2003). Do not include the location of
+% the conference or the exact date; do include the page numbers if
+% available. See the examples of citations at the end of this document
+% and in the accompanying \texttt{BibTeX} document.
+
+% References \textit{must be the same font size as other body
+%   text}. References should be in alphabetical order by last name of
+% first author. Example reference formatting for individual journal
+% articles~\cite{ethics}, articles in conference
+% proceedings~\cite{Klemmer:2002:WSC:503376.503378},
+% books~\cite{Schwartz:1995:GBF}, theses~\cite{sutherland:sketchpad},
+% book chapters~\cite{winner:politics}, a journal issue~\cite{kaye:puc},
+% websites~\cite{acm_categories,cavender:writing},
+% tweets~\cite{CHINOSAUR:venue}, patents~\cite{heilig:sensorama}, and
+% online videos~\cite{psy:gangnam} is given here. This formatting is a
+% slightly abbreviated version of the format automatically generated by
+% the ACM Digital Library (\url{http://dl.acm.org}) as ``ACM Ref''. More
+% details of reference formatting are available at:
+% \url{http://www.acm.org/publications/submissions/latex_style}.
+
+% REFERENCES FORMAT
+% References must be the same font size as other body text.
+\bibliographystyle{SIGCHI-Reference-Format}
+\bibliography{teamTBD_references}
+%\citation
+\nocite{*}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

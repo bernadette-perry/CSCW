@@ -18,4 +18,6 @@ Contributions:
 ###October 19 - 25
 Contributions:
  * generated webserver portion for external JavaScript capabilities - 1h
- * created user accounts to give access to web server - 1h	
+ * created user accounts to give access to web server - 1h
+ * added literature review document to aid in distribution of literature review reading and documenting - .5h
+ * 
