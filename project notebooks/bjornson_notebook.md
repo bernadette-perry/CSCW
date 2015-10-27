@@ -20,4 +20,7 @@ Contributions:
  * generated webserver portion for external JavaScript capabilities - 1h
  * created user accounts to give access to web server - 1h
  * added literature review document to aid in distribution of literature review reading and documenting - .5h
- * 
+
+###October 26 - November 1
+Contributions:
+ * First edit of **project proposal** into **interim report** based on Peggy's notes - 2h
