@@ -1,0 +1,74 @@
+Team TBD – Project Notebook,,,
+,,,
+"Bjornson, Steven",Date Range,Contribution,Hours
+,October 5 – 11,Created Github project,0.15
+,October 5 – 11,added Github integration to Slack work group,0.15
+,October 5 – 11,found 5 (hopefully) useful papers for literature review,1
+,October 5 – 11,started .bib reference file for adding literature citations,0.1
+,October 12 – 18,Created proposal outline for group editing of proposal,0.15
+,October 12 – 18,created Gantt Chart to keep track of schedule and required progress,2
+,October 12 – 18,Edit project proposal,1
+,October 12 – 18,Put proposal into latex and export as pdf,2
+,October 19 – 25,generated webserver portion for external JavaScript capabilities,1
+,October 19 – 25,created user accounts to give access to web server,1
+,October 19 – 25,added literature review document to aid in distribution of literature review reading and documenting,0.5
+,October 26 – Nov 1,first edit of project proposal into interim report based on Peggy's notes,2
+,October 26 – Nov 1,changed project notebooks to spreadsheet format,1
+,October 26 – Nov 1,began making notes of readings for 'literature review',2
+,,,
+,,Total,14.05
+,,,
+"Perry, Bernadette",Date Range,Contribution,Hours
+,October 5 – 11,Contacted ARIS google group regarding our project idea of adding collaborative element(s) to ARIS platform,
+,,research regarding adding social media or chat room to the platform,
+,,went through ARIS manual research Javascript played with the new 2.0 version of ARIS,3
+,October 5 – 11,ARIS Google hangouts- asked for feedback from David (creator of ARIS) about what group proposes to do,
+,,Searched for research papers/ methodology & AR sources,
+,,added 5 papers to literature review folder & design science diagram,
+,,Added 11 sources for bib,
+,,uploaded notes regarding methodology and testing for proposal,5.5
+,October 12 – 18,"contacted prof I RA for in hopes to borrow an iPad from the Digital Lang Lab, so that both our team programmers have access to one (I have one to lend)",
+,,mostly reading/researching/writing & editing the methodologies section,
+,,formatted original 11 bib sources and added these ,
+,,added an additional 7 sources to bib,
+,,"checked mail, google groups & played with ARIS 2.0 exploring what's possible in the new version",10.5
+,October 12 – 18,ethics forms,
+,,reviewed and gave feedback for minor changes in proposal,1.5
+,October 12 – 18,"google forums ARIS, ARIS 2.0 platform & videos, trying to get old iphone set up so both coders have devices for testing ",3
+,October 19 – 25,set up old iPhone for use so that both team coders have a device for testing,
+,,"mostly ethics forms, 1 hour meeting re ARIS, half hour prep game jam ",
+,,"spent more time than necessary, as I was filling in the forms for both plan A and plan B just in case. Ethics form is now complete, but not appendices. Drafted questionnaires, interview / focus group questions. Started appendices forms. Searched for letter of implied consent- will have to email ethics coordinator. Spoke to Peggy & simplified this to only address Plan A & will resubmit new version of forms and appendices if Plan B is necessary.",8.5
+,October 19 – 25,"finally found a usally template copy of letter of implied consent, only available in Pdf",
+,,learned how to convert Pdf to word (thank god for YouTube tutorial videos!),
+,,"finished script call for participation, written consent form & letter of implied consent",2.5
+,October 19 – 25,ARIS Game Jam- the Game is progressign well & really hoping to have a functioning simple version by the end of the Jam tomorrow. Kaileen made a major break through today with the code- so very exciting that we can incorporate it now! :),7.75
+,,,
+,,Total,42.25
+,,,
+"Mcculloch, Kaileen",Date Range,Contribution,Hours
+,October 5 – 11,exploring options for iOS emulators for Linux,2
+,October 5 – 11,researching current literature relevant to our project,2
+,October 12 – 18,team meeting,0.75
+,October 12 – 18,project proposal,1
+,October 12 – 18,settings up environment and testing out implementation possibilities,5
+,October 19 – 25,discussing project goals with Bernadette and Testing ARIS platform,0.5
+,October 19 – 25,integration testing,3
+,October 19 – 25,ARIS Game Jam -> Twitter successfully integrated into the ARIS game -> Mostly aesthetics left,11
+,,,
+,,total,25.25
+,,,
+"Ca, Khoipham",Date Range,Contribution,Hours
+,October 12 – 18,Editing and finishing up group proposal,
+,,Do Human Research Ethics Application ,
+,,,
+,,total,0
+,,,
+"Lebo, Peter",Date Range,Contribution,Hours
+,October 5 – 11,Trying to get the iOS emulator working and importing the existing ARIS repo so we can test the app (i ,2
+,October 5 – 11,"continued trying to get the iOS emulator working -- to no avail, hopefully bernadette will allow me to use ",2
+,October 5 – 11,Researched relevant papers regarding our project,0.5
+,October 12 – 18,still trying to get Xcode working with the ARIS iOSClient -- SUCCESS,2
+,October 12 – 18, helped write up the technical section of the project proposal,0.75
+,October 12 – 18,"Xcode is working for emulating the app, but I spent 2 hours troubleshooting can't connect to any made games using emulation software -- thus, I'm hoping I can use a real apple device to test on",2
+,,,
+,,total,9.25
